@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kegiatan Kemasyarakatan PT FATTKA</title>
+    
 
     <!-- Adding Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css">
@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="stylesheet" href="./asset/css/responsive.css">
 
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kegiatan Kemasyarakatan PT FATTKA</title>
+
 <style>
+  
+    
+
     h1.title {
         text-align: center;
         font-size: 32px;
@@ -31,11 +38,14 @@
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         margin-bottom: 35px;
+        transition: 0.3s ease;
+        opacity: 0;
+        transform: translateY(30px);
+    }
 
-        /* Animasi DIHAPUS */
+    .card.show {
         opacity: 1;
-        transform: none;
-        transition: none;
+        transform: translateY(0);
     }
 
     .card:hover {
@@ -69,50 +79,63 @@
     }
 </style>
 </head>
-
 <body>
 
-<section class="header">
-    <div class="container header-nav">
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light main-menu fixed-top">
-                    <div class="container">
-                        <a href="#" class="navbar-brand">
-                            <img src="./asset/image/Logo.png" alt="LeadsbeeLogo">
-                        </a>
-                        <button class="navbar-toggler" data-toggle="collapse" data-target="#beeToggler">
-                            <span><i class="fa fa-bars"></i></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="beeToggler">
-                            <ul class="navbar-nav ml-auto">
-                                <li><a href="index.html">Beranda</a></li>&nbsp;
-                                <li><a href="./produk.html">Produk</a></li>&nbsp;
-                                <li><a href="./departrmrn.html">Departemen</a></li>&nbsp;
-                                <li><a href="./denah.html">Denah</a></li>&nbsp;
-                                <li><a href="./kegiatan.html">Kegiatan</a></li>&nbsp;
-                                <li>
-                                    <a href="https://wa.me/6284576258164" target="_blank">
-                                        <button class="nav-button phone-blink">
-                                            contact-us <i class="fas fa-phone"></i>
-                                        </button>
-                                    </a>
-                                </li>&nbsp;
-                            </ul>
+<section class="header ">
+        <!-- Header Navigation Start  -->
+        <div class="container header-nav">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light main-menu fixed-top ">
+                        <div class="container">
+                            <a href="#" class="navbar-brand">
+                                <img src="./asset/image/Logo.png" alt=" LeadsbeeLogo">
+                            </a>
+                            <button class="navbar-toggler" data-toggle="collapse" data-target="#beeToggler">
+                                <span><i class="fa fa-bars"></i></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="beeToggler">
+                                <ul class="navbar-nav ml-auto ">
+                                    <li><a href="index.html">Beranda</a></li>
+                                    &nbsp;
+                                    <li><a href="./produk.html">Produk</a></li>
+                                    &nbsp;
+                                    <li><a href="./departrmrn.html">Departemen</a></li>
+                                    &nbsp;
+                                    <li><a href="./denah.html">Denah</a></li>
+                                    &nbsp;
+                                    <li><a href="./kegiatan.html">Kegiatan </a></li>
+                                    &nbsp;
+                                                                        <li>
+    <a href="https://wa.me/6284576258164" target="_blank">
+        <button class="nav-button phone-blink">
+            contact-us <i class="fas fa-phone"></i>
+        </button>
+    </a>
+</li>
+                                    &nbsp;
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
-</section>
 
-<div class="container" style="margin-top: 120px;">
+        <!-- Header Navigation End  -->
+
+        <!-- Header Banner Start  -->
+        
+
+
+    </section>
+
+<div class="container">
     <h1 class="title">Kegiatan Kemasyarakatan PT FATTKA</h1>
 
     <!-- CARD 1 -->
     <div class="card">
-        <img src="/asset/img/kegiatan1.png" alt="Kegiatan Penyuluhan" loading="lazy">
+        <img src="/asset/img/kegiatan1.png" alt="Kegiatan Penyuluhan">
         <h2>Kegiatan Penyuluhan & Survei Masyarakat</h2>
         <p>
             Kegiatan penyuluhan kesehatan dan pengumpulan data melalui survei mencerminkan upaya 
@@ -127,7 +150,7 @@
 
     <!-- CARD 2 -->
     <div class="card">
-        <img src="/asset/img/kegiatan2.png" alt="Edukasi Penyimpanan Obat" loading="lazy">
+        <img src="/asset/img/kegiatan2.png" alt="Edukasi Penyimpanan Obat" >
         <h2>Edukasi Penyimpanan Obat yang Benar</h2>
         <p>
             PT FATTKA mengadakan sesi edukasi mengenai cara penyimpanan obat yang benar melalui 
@@ -141,7 +164,7 @@
 
     <!-- CARD 3 -->
     <div class="card">
-        <img src="/asset/img/kegiatan3.png" alt="Penanaman Pohon FATTKA" loading="lazy">
+        <img src="/asset/img/kegiatan3.png" alt="Penanaman Pohon FATTKA">
         <h2>Program Penanaman Pohon</h2>
         <p>
             Kegiatan penanaman pohon di sekitar kawasan industri farmasi PT FATTKA menjadi bentuk nyata 
@@ -154,66 +177,102 @@
 </div>
 
 <section class="footer section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="footer-widget-1">
-                    <img src="./asset/image/Logo.png" alt="">
-                    <p>PT-Fattka</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-widget-1">
+                        <img src="./asset/image/Logo.png" alt="">
+                        <p>
+                            PT-Fattka
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget-2">
+                        <h3>Work</h3>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget-3">
+                        <h3>Jelajahi</h3>
+                        <ul>
+                            <li><a href="/index.html">Beranda</a></li>
+                            <li><a href="/produk.html">Produk</a></li>
+                            <li><a href="/departrmrn.html">Departemen</a></li>
+                            <li><a href="/denah.html">Denah</a></li>
+                            <li><a href="/">Kegiatan</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget-4">
+                        <h3>Alamat</h3>
+                        <p>
+                            Jl. Gubernur H. A Bastari, Rambutan, Palembang City, 2304 B,<br>  South Sumatra – Indonesia Phone: (0711) 187164 <br>  Fax: (0711) 187164 Email: fattka@gmail.com <br>  Tax ID: 01.813.068.2-732.001 
+                        </p>
+                        <!-- <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                        </ul> -->
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="footer-widget-2">
-                    <h3>Work</h3>
-                    <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                    </ul>
+			
+			<div class="row" style="border-top: 1px solid #ddd; padding-top: 10px;">
+                <div class="col-md-10">
+                    <div class="copyright-text">
+                        <p>
+                            Copyright © 2025 PT-Fattka, All Rights Reserved.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="footer-widget-3">
-                    <h3>Jelajahi</h3>
-                    <ul>
-                        <li><a href="/index.html">Beranda</a></li>
-                        <li><a href="/produk.html">Produk</a></li>
-                        <li><a href="/departrmrn.html">Departemen</a></li>
-                        <li><a href="/denah.html">Denah</a></li>
-                        <li><a href="/">Kegiatan</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="footer-widget-4">
-                    <h3>Alamat</h3>
-                    <p>
-                        Jl. Gubernur H. A Bastari, Rambutan, Palembang City, 2304 B,<br>
-                        South Sumatra – Indonesia<br>
-                        Phone: (0711) 187164<br>
-                        Fax: (0711) 187164<br>
-                        Email: fattka@gmail.com<br>
-                        Tax ID: 01.813.068.2-732.001
-                    </p>
+                <div class="col-md-2">
+                    <div class="messenger">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="row" style="border-top: 1px solid #ddd; padding-top: 10px;">
-            <div class="col-md-10">
-                <div class="copyright-text">
-                    <p>Copyright © 2025 PT-Fattka, All Rights Reserved.</p>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="messenger">
-                    <i class="fab fa-facebook-messenger"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script>
+
+    
+    // Fade-in scroll animation
+    const cards = document.querySelectorAll('.card');
+
+    const showCards = () => {
+        cards.forEach(card => {
+            const rect = card.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                card.classList.add('show');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', showCards);
+    window.addEventListener('load', showCards);
+</script>
 
 </body>
 </html>
